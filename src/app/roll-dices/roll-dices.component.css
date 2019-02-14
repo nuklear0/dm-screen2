@@ -1,0 +1,13 @@
+#diceWrappers{
+  width: 800px;
+  align-content: center;
+  margin: auto;
+}
+
+mat-card{
+  width: 300px;
+}
+
+a {
+  color: red;
+}

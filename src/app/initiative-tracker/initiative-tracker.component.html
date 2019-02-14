@@ -1,0 +1,39 @@
+<mat-card id="initiativeTrackComponent">
+  <div>
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="nameInput">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Initiative" type="number" [(ngModel)]="initiative">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="HP" type="number" [(ngModel)]="hp">
+    </mat-form-field>
+    <button mat-button (click)="addToList(nameInput, initiative, hp)">Enter</button>
+    <button mat-button (click)="generateDefault()">Generate default</button>
+    <div>
+      <button mat-button (click)="sortByInitiative()">Sort</button>
+      <button mat-button (click)="resetList()">Reset</button>
+    </div>
+    <div id="initiativeHeader">
+      <div>Name</div>
+      <div>Initiative</div>
+      <div>HP</div>
+    </div>
+    <div>
+      <div *ngFor="let c of listOfInitiatives" class="orderItem">
+        <div id="nameDiv">
+          <b>{{c.name}}</b>
+        </div>
+        <div class="numDiv">
+          <input matInput placeholder="HP" [(ngModel)]="c.initiative">
+        </div>
+        <div class="numDiv">
+          <input matInput placeholder="HP" [(ngModel)]="c.hp">
+        </div>
+        <button mat-button (click)="removeFromList(c)">X</button>
+      </div>
+
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,32 @@
+#initiativeTrackComponent {
+  display: inline-flex;
+}
+
+.orderItem {
+    display: inline-flex;
+    align-items: center;
+}
+
+.orderItem div {
+  margin-right: 12px;
+}
+
+#nameDiv {
+  min-width: 100px;
+}
+
+.numDiv {
+  width: 60px;
+}
+
+#initiativeHeader{
+  display: inline-flex;
+}
+
+#initiativeHeader div{
+  margin-right: 12px;
+}
+
+#initiativeHeader div:first-child{
+  min-width: 100px
+}
