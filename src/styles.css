@@ -1,6 +1,12 @@
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+body{
+  background: url(https://ih1.redbubble.net/image.426984343.9677/flat,800x800,075,f.u1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 mat-card {
   margin: 15px;
 }

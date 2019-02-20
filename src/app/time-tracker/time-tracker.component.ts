@@ -13,6 +13,7 @@ export class TimeTrackerComponent implements OnInit {
   minute: number;
 
   ngOnInit() {
+    this.resetTime();
   }
 
   onChange(hourOrMinute: string) {
