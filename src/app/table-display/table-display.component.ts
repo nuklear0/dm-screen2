@@ -8,15 +8,23 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class TableDisplayComponent implements OnInit {
 
+  src: string;
   selected: string;
-  externalUrl = '/dm-screen2/assets/images/';
-  internalUrl = '/assets/images/';
+  externalUrl: string;
+  internalUrl: string;
 
   constructor() {
   }
 
   ngOnInit() {
     this.selected = 'combat';
+    this.externalUrl = '/dm-screen2/assets/images/';
+    this.internalUrl = '/assets/images/';
+    this.src = this.internalUrl + this.selected + '.jpg';
+  }
+
+  getImageGH() {
+       this.src = this.externalUrl + this.selected + '.jpg';
   }
 
 }

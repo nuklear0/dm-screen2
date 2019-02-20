@@ -18,6 +18,6 @@
     </mat-select>
   </mat-form-field>
   <div>
-    <img [src]="internalUrl + selected + '.jpg'" onerror="src = externalUrl + selected + '.jpg'">
+    <img [src]="src" (error)="getImageGH()">
   </div>
 </mat-card>
