@@ -8,7 +8,6 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class TableDisplayComponent implements OnInit {
 
-  src: string;
   selected: string;
   externalUrl: string;
   internalUrl: string;
@@ -20,11 +19,6 @@ export class TableDisplayComponent implements OnInit {
     this.selected = 'combat';
     this.externalUrl = '/dm-screen2/assets/images/';
     this.internalUrl = '/assets/images/';
-    this.src = this.internalUrl + this.selected + '.jpg';
-  }
-
-  getImageGH() {
-       this.src = this.externalUrl + this.selected + '.jpg';
   }
 
 }
