@@ -18,6 +18,7 @@
     </mat-select>
   </mat-form-field>
   <div>
-    <img [src]="this.internalUrl + this.selected + '.jpg'" (error)="this.externalUrl + this.selected + '.jpg'">
+    <img src="{{this.internalUrl + this.selected + '.jpg'}}" onerror="this.style.display='none'">
+    <img src="{{this.externalUrl + this.selected + '.jpg'}}" onerror="this.style.display='none'">
   </div>
 </mat-card>
