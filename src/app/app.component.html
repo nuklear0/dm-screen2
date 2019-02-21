@@ -1,10 +1,11 @@
 <div fxLayout="row">
-  <app-roll-dices></app-roll-dices>
+  <div fxLayout="column">
+    <app-table-display fxLayout="column" fxFlex="100"></app-table-display>
+  </div>
+  <div fxLayout="column">
     <app-initiative-tracker></app-initiative-tracker>
     <app-time-tracker></app-time-tracker>
+    <app-roll-dices></app-roll-dices>
+  </div>
 </div>
-<div fxLayout="row">
-  <app-table-display fxLayout="column" fxFlex="100"></app-table-display>
-</div>
-
 
