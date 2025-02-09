@@ -44,10 +44,15 @@ export class InitiativeTrackerComponent implements OnInit {
     this.listOfInitiatives = [];
   }
 
+  duplicate(character: Character){
+    this.addToList(character.name, character.initiative, character.hp)
+  }
+
   generateDefault() {
-    this.addToList( 'Rothrin', 0, 0);
-    this.addToList( 'Harkon', 0, 0);
-    this.addToList( 'Barakas', 0, 0);
+    this.addToList( 'Shieldbiter', 0, 0);
+    this.addToList( 'Frank', 0, 0);
+    this.addToList( 'Nimrodel', 0, 0);
+    this.addToList( 'Tara', 0, 0);
   }
 
 
